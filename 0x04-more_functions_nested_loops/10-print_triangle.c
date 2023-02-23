@@ -12,6 +12,7 @@ if (size <= 0)
 } else
 {
 	int i, j;
+
 	for (i = 1; i <= size; i++)
 	{
 		for (j = i; j < size; j++)
