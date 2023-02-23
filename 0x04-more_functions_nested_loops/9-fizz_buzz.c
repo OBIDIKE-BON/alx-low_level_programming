@@ -9,9 +9,9 @@
  */
 int main(void)
 {
-	int x = 1;
+	int x;
 
-	while (x < 101)
+	for (x = 1; x < 101; x++)
 	{
 		if (x % 3 == 0 && x % 5 == 0)
 		{
@@ -34,7 +34,6 @@ int main(void)
 		{
 		printf(" ");
 		}
-		x++;
 	}
 	printf("\n");
 	return (0);
