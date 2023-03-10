@@ -17,6 +17,8 @@ int main(void)
     _putchar('\n');
     print_number(-78801024);
     _putchar('\n');
+    print_number(0x7391);
+    _putchar('\n');
     print_number(1);
     _putchar('\n');
     print_number(0);
