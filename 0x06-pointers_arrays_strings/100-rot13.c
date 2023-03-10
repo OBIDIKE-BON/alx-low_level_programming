@@ -16,12 +16,12 @@ char *rot13(char *s)
 		{
 			if ((s[i] >= 'a' && s[i] <= 'm') ||
 					(s[i] >= 'A' && s[i] <= 'M'))
-				s[i] += 13;
+				s[i] = s[i] + 13;
 			else
-				s[i] -= 13;
-			i+=1;
+				s[i] = s[i] - 13;
+			i = i + 1;
 		}
-		i+=1;
+		i = i + 1;
 	}
 	return (s);
 }
