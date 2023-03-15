@@ -7,27 +7,18 @@
  */
 void print_number(int n)
 {
-	int power = 10;
-
+	unsigned int num;
+/* check if the number is negative */
+	num = n;	
 	if (n < 0)
 	{
-		_putchar('-');
-		n *= -1;
+		_putchar(45);
+		num = -n;
 	}
-
-	if (n >= 0 && n <= 9)
-		_putchar((n) + '0');
-
-	else
-	{
-		while (n / power > 9)
-			power *= 10;
-
-		while (power >= 1)
+/* print number by recursion*/
+	if (num / 10)
 		{
-			_putchar((n / power) + '0');
-			n %= power;
-			power /= 10;
+			print_number(num / 10);
 		}
-	}
+	_putchar((num % 10) + '0');
 }
