@@ -2,7 +2,7 @@
 
 /**
  * _sqrt_recursion - main funct
- * @n: int n
+ * @n: int param
  * Return: int
  */
 int _sqrt_recursion(int n)

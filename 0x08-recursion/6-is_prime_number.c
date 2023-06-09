@@ -4,8 +4,8 @@ int tmp_prime(int n, int i);
 
 /**
  * divisors - number is prime?
- * @n: integer params
- * @m: integer params
+ * @n: integer param
+ * @m: integer param
  * Return: boolean
  */
 

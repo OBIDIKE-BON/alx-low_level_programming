@@ -2,8 +2,8 @@
 
 /**
  * _pow_recursion - pow recursion
- * @x: integer params
- * @y: integer paramtr
+ * @x: integer param
+ * @y: integer param
  * Return: recursion
  */
 

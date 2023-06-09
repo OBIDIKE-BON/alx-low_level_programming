@@ -3,7 +3,7 @@
 /**
  * _print_rev_recursion - reverse
  * @s: pointer to string params
- *
+ * Return: void
  */
 
 void _print_rev_recursion(char *s)
