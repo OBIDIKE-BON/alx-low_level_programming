@@ -13,3 +13,4 @@ What is the default program name when compiling with gcc
 What is the official C coding style and how to check your code with betty-style
 How to find the right header to include in your source code when using a standard library function
 How does the main function influence the return value of the program
+About pointers, pointers pointer, recurssion etc.
