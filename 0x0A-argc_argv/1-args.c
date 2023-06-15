@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * Description: main - prints number of command line arguments 
+ * Description: main - prints number of command line arguments
  * passed at run-time followed by a new line.
  * @argc: the number of cammand line arguments passed at run-time.
  * @argv: an array of cammand line arguments passed at run-time.
