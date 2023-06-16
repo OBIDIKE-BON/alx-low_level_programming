@@ -17,6 +17,38 @@ void _puts(char *str)
 	}
 	_putchar('\n');
 }
+
+/**
+ * printLargeNumber - prints integers
+ * @number: nunber to be printed
+ * Return: void
+ */
+
+void printLargeNumber(unsigned long number)
+{
+	char digits[20];
+	int i = 0;
+
+	if (number == 0)
+	{
+		putchar('0');
+		return;
+	}
+
+	while (number > 0)
+	{
+		digits[i] = '0' + (number % 10);
+		number /= 10;
+		i++;
+	}
+
+	while (i > 0)
+	{
+		i--;
+		putchar(digits[i]);
+	}
+}
+
 /**
  * main - multiplies two positive numbers
  * @argc: nunber of arguments passed at run-time
@@ -42,6 +74,29 @@ int i, j;
 
 	}
 	mul = atol(argv[1]) *  atol(argv[2]);
-	_putchar((mul % 10) + '0');
+	printLargeNumber(mul);
+	_putchar('\n');
 return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
