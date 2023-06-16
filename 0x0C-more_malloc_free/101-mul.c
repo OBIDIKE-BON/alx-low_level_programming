@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * _puts - prints string
@@ -40,6 +42,6 @@ int i, j;
 
 	}
 	mul = atol(argv[1]) *  atol(argv[2]);
-	_puts((char) mul);
+	_putchar((mul % 10) + '0');
 return (0);
 }
