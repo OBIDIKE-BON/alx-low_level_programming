@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-		
+
 	if (num < 0) /* account for negative n bytes */
 		return (NULL);
 	if (num >= _strlen(s2)) /* account for n too big */
@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	len = _strlen(s1) + num + 1; /* +1 to account for null pointer */
 	ptr = malloc(sizeof(*ptr) * len); /* malloc and check for error */
-	
+
 	if (ptr == NULL)
 		return (NULL);
 
