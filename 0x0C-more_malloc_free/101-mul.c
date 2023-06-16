@@ -1,6 +1,22 @@
 #include "main.h"
 
 /**
+ * _puts - prints string
+ * @str: input string
+ * Return: no return
+ */
+
+void _puts(char *str)
+{
+	while (*str != '\0')
+	{
+		_putchar(*str);
+		str++;
+	}
+	_putchar('\n');
+}
+
+/*
  * main - multiplies two positive numbers
  * @argc: nunber of arguments passed at run-time
  * @argv: arguments passed at run-time
