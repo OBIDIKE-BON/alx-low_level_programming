@@ -26,7 +26,7 @@ void _puts(char *str)
 
 void printLargeNumber(unsigned long number)
 {
-	char digits[20];
+	char digits[800];
 	int i = 0;
 
 	if (number == 0)
@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i][j] > 57 || argv[i][j] < 48)
+			if (argv[i][j] < 48 || argv[i][j] > 57)
 			{
 				_puts("Error");
 				exit(98);
@@ -81,6 +81,6 @@ int main(int argc, char *argv[])
 
 	}
 	mul = atol(argv[1]) *  atol(argv[2]);
-	printLargeNumber(mul);
+	_putchar((mul % 10) + '0');
 return (0);
 }
