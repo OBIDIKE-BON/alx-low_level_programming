@@ -47,7 +47,6 @@ void printLargeNumber(unsigned long number)
 		i--;
 		putchar(digits[i]);
 	}
-	_putchar('\n');
 }
 
 /**
