@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 
 /**
- * printString - Function to print a string using putchar()
+ * printString - Function to print a string using _putchar()
  * @str: pointer to the char being printed
  */
 
@@ -10,7 +11,7 @@ void printString(const char *str)
 {
 	while (*str != '\0')
 	{
-		putchar(*str);
+		_putchar(*str);
 		str++;
 	}
 }
@@ -91,8 +92,8 @@ void multiply(const char *num1, const char *num2)
 	while (result[i] == 0 && i < resultSize - 1)
 		i++;
 	for (; i < resultSize; i++)
-		putchar(result[i] + '0');/** Print the result */
-	putchar('\n');
+		_putchar(result[i] + '0');/** Print the result */
+	_putchar('\n');
 	free(result);
 }
 
