@@ -47,6 +47,8 @@ void printLargeNumber(unsigned long number)
 		i--;
 		putchar(digits[i]);
 	}
+
+	_putchar('\n');
 }
 
 /**
@@ -62,22 +64,23 @@ int main(int argc, char *argv[])
 	int i, j;
 
 	if (argc != 3)
-	{ _puts("Error\n");
-	exit(98); }
+	{
+		_puts("Error");
+		exit(98);
+	}
 	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (argv[i][j] > 57 || argv[i][j] < 48)
 			{
-			_puts("Error\n");
-			exit(98);
+				_puts("Error");
+				exit(98);
 			}
 		}
 
 	}
 	mul = atol(argv[1]) *  atol(argv[2]);
 	printLargeNumber(mul);
-
-	return (0);
+return (0);
 }
