@@ -7,13 +7,14 @@
  * @str: pointer to the char being printed
  */
 
-void printString(const char *str)
+void printString(char *str)
 {
 	while (*str != '\0')
 	{
 		_putchar(*str);
 		str++;
 	}
+	_putchar('\n');
 }
 
 /**
@@ -21,7 +22,7 @@ void printString(const char *str)
  * @str: pointer to the char being checked
  * Return: 0 or 1 based on the check
  */
-int isNumeric(const char *str)
+int isNumeric(char *str)
 {
 	while (*str != '\0')
 	{
@@ -37,7 +38,7 @@ int isNumeric(const char *str)
  * @str: pointer to the char array
  * Return: length of passed char array
  */
-int stringLength(const char *str)
+int stringLength(char *str)
 {
 	int length = 0;
 
@@ -49,26 +50,26 @@ int stringLength(const char *str)
 	return (length);
 }
 /**
- * multiply - Function to multiply two numbers and print the result
+ * multiply - Function to multiply two numbers and print the mul
  * @num1: pointer to the first char array passed at run-time
  * @num2: pointer to the second char array passed at run-time
  */
-void multiply(const char *num1, const char *num2)
+void multiply(char *num1, char *num2)
 {
 	int len1 = stringLength(num1);
 	int len2 = stringLength(num2);
-	int resultSize = len1 + len2;
-	int *result = (int *)malloc(sizeof(int) * resultSize);
+	int mulSize = len1 + len2;
+	int *mul = (int *)malloc(sizeof(int) * mulSize);
 	int i, j, digit1, digit2, product, carry, remainder;
 
 	if (!isNumeric(num1) || !isNumeric(num2))
 	{
-		printString("Error\n");
+		printString("Error");
 		exit(98);
 	}
-/** Initialize result array with zeros */
-	for (i = 0; i < resultSize; i++)
-		result[i] = 0;
+/** Initialize mul array with zeros */
+	for (i = 0; i < mulSize; i++)
+		mul[i] = 0;
 	for (i = len1 - 1; i >= 0; i--)/** Perform multiplication */
 	{
 		for (j = len2 - 1; j >= 0; j--)
@@ -78,23 +79,23 @@ void multiply(const char *num1, const char *num2)
 			product = digit1 * digit2;
 			carry = product / 10;
 			remainder = product % 10;
-			result[i + j + 1] += remainder;
-			result[i + j] += carry;
+			mul[i + j + 1] += remainder;
+			mul[i + j] += carry;
 		}
 	}
-	for (i = resultSize - 1; i > 0; i--)
+	for (i = mulSize - 1; i > 0; i--)
 	{
-		carry = result[i] / 10;/** Handle carry */
-		result[i] %= 10;
-		result[i - 1] += carry;
+		carry = mul[i] / 10;/** Handle carry */
+		mul[i] %= 10;
+		mul[i - 1] += carry;
 	}
 	i = 0;/** Skip leading zeros */
-	while (result[i] == 0 && i < resultSize - 1)
+	while (mul[i] == 0 && i < mulSize - 1)
 		i++;
-	for (; i < resultSize; i++)
-		_putchar(result[i] + '0');/** Print the result */
+	for (; i < mulSize; i++)
+		_putchar(mul[i] + '0');/** Print the mul */
 	_putchar('\n');
-	free(result);
+	free(mul);
 }
 
 /**
@@ -108,7 +109,7 @@ int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
-		printString("Error\n");
+		printString("Error");
 		exit(98);
 	}
 
