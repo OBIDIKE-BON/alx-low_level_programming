@@ -81,6 +81,6 @@ int main(int argc, char *argv[])
 
 	}
 	mul = atol(argv[1]) *  atol(argv[2]);
-	printLargeNumber(mul);//_putchar((mul % 10) + '0');
+	printLargeNumber(mul);
 return (0);
 }
