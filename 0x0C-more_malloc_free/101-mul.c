@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * printString - Function to print a string using putchar()
@@ -90,7 +91,7 @@ void multiply(const char *num1, const char *num2)
 	while (result[i] == 0 && i < resultSize - 1)
 		i++;
 	for (; i < resultSize; i++)
-		putChar(result[i] + '0');/** Print the result */
+		putchar(result[i] + '0');/** Print the result */
 	putchar('\n');
 	free(result);
 }
