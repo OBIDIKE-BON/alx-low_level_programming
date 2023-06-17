@@ -24,7 +24,7 @@ void _puts(char *str)
  * Return: void
  */
 
-void printLargeNumber(unsigned long number)
+void printLargeNumber(unsigned long long number)
 {
 	char digits[20];
 	int i = 0;
@@ -60,7 +60,7 @@ void printLargeNumber(unsigned long number)
 
 int main(int argc, char *argv[])
 {
-	unsigned long mul;
+	unsigned long long mul;
 	int i, j;
 
 	if (argc != 3)
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 		}
 
 	}
-	mul = atol(argv[1]) *  atol(argv[2]);
+	mul = atoll(argv[1]) *  atoll(argv[2]);
 	printLargeNumber(mul);
 return (0);
 }
