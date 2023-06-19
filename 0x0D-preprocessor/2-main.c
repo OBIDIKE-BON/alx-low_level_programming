@@ -7,5 +7,5 @@
 
 int main()
 {
-	printf("%s", __FILE__);
+/* ("%s", __FILE__); */
 }
