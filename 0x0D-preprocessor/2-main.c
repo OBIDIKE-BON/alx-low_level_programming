@@ -5,7 +5,7 @@
  * Prints the name of this file
  */
 
-int main()
+int main(void)
 {
 	printf("%s", __FILE__);
 }
