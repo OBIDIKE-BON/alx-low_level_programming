@@ -9,10 +9,10 @@ void printString(char *str)
 {
 	while (*str != '\0')
 	{
-		_putchar(*str);
+		putchar(*str);
 		str++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
 
 /**
