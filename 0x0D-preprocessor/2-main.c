@@ -18,9 +18,11 @@ void printString(char *str)
 /**
  * main - Prgram Entry point and
  * Prints the name of this file
+ * Return: Always 0
  */
 
 int main(void)
 {
-	printString("%s", __FILE__);
+	printString(__FILE__);
+	return (0);
 }
