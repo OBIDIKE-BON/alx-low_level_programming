@@ -7,4 +7,5 @@
 | 2-print_dog.c | Write a function that prints a struct dog|
 | 2-print_dog.c | printf("Age: %.6f\n", d->age != NULL ? d-> : "(nil)");|
 | dog.h | Define a new type dog_t as a new name for the type struct dog.|
+| 4-new_dog.c | Write a function that creates a new dog.|
 |  | |
