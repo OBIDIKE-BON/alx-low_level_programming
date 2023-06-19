@@ -9,7 +9,7 @@
  *
  * Description: TDefines the attributes of a dog.
  */
- 
+
 struct dog
 {
 	char *name;
