@@ -5,6 +5,6 @@
 | dog.h | Define a new type struct dog with the following elements: name, type = char ptr; age, type = float; owner, type = char ptr|
 | 1-init_dog.c | Write a function that initialize a variable of type struct dog|
 | 2-print_dog.c | Write a function that prints a struct dog|
-|  | |printf("Age: %.6f\n", d->age != NULL ? d-> : "(nil)");
-|  | |
+| 2-print_dog.c | printf("Age: %.6f\n", d->age != NULL ? d-> : "(nil)");|
+| dog.h | Define a new type dog_t as a new name for the type struct dog.|
 |  | |
