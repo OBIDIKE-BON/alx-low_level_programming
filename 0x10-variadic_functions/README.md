@@ -3,7 +3,7 @@
 | Task | Filename(s) | Description |
 | ---- | -------- | ----------- |
 | 0 | 0-sum_them_all.c | Write a function that returns the sum of all its parameters.|
-| 1 | 1-array_iterator.c | Write a function that executes a function given as a parameter on each element of an array.|
+| 1 | 1-print_numbers.c | Write a function that prints numbers, followed by a new line.|
 | 2 | 2-int_index.c | Write a function that searches for an integer.|
 | 3 | 3-main.c, 3-get_op_func.c, 3-op_functions.c, 3-calc.h | Write a program that performs simple arithemetic operations.|
 | 4 | variadic_functions.c | Contains type definitions, structs and function prototypes.|
