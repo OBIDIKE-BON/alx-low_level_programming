@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 		{
 		case 'c':
 			printf("%s", sep);
-			printf("%c", va_arg(list, char));
+			printf("%c", va_arg(list, int));
 			sep = ", ";
 		break;
 
@@ -41,7 +41,7 @@ void print_all(const char * const format, ...)
 		break;
 
 		default:
-			printf("");
+			;
 		}
 		i++;
 	}
