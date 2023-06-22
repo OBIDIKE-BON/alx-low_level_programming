@@ -3,8 +3,8 @@
 /**
  * print_strings - Prints all string passed as args, followed by a new line.
  * @separator: The string to be printed between numbers.
- * @n: The number of integers passed to the function.
- * @...: A variable number of numbers to be printed.
+ * @n: The number of strings passed to the function.
+ * @...: A variable number of strings to be printed.
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -15,7 +15,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(ints, n);
 	while (++i <= n)
 	{
-		printf("%s", (va_arg(ints, char*) != NULL ? va_arg(ints, int) : "(nil)"));
+		printf("%s", (va_arg(ints, char*) != NULL ? va_arg(ints, char*) : "(nil)"));
 		printf("%s", (separator != NULL && i != n ? separator : ""));
 	}
 
