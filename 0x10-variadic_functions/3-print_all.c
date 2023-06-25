@@ -1,5 +1,7 @@
 #include "variadic_functions.h"
 
+void print_all(const char * const format, ...);
+
 /**
  * print_all - prints any type
  * @format: arguments to print
@@ -12,7 +14,7 @@ void print_all(const char * const format, ...)
 	va_list list;
 
 	va_start(list, format);
-	while (format != NULL && format[i])
+	while (format && format[i])
 	{
 		switch (format[i])
 		{
