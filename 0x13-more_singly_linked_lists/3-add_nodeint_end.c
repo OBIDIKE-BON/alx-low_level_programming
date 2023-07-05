@@ -1,27 +1,22 @@
 #include "lists.h"
 
 /**
- * add_node_end - Adds a new node to a linked list
- * @str: string for the new node
+ * add_nodeint_end - Adds a new node to the end of a linked list
+ * @n: in for the new node
  * @head: pointer to the firs element
  *
  * Return: the number of nodes printed
  */
 
-list_t *add_node_end(list_t **head, const char *str)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	size_t len = 0;
-	list_t *last, *temp;
+	listint_t *last, *temp;
 
-	while (str[len])
-		len++;
-
-	last = malloc(sizeof(list_t));
-	if (!last || !str)
+	last = malloc(sizeof(listint_t));
+	if (!last)
 		return (NULL);
 
-	last->str = strdup(str);
-	last->len = len;
+	last->n = n;
 	last->next = NULL;
 	if (!(*head))
 	{
