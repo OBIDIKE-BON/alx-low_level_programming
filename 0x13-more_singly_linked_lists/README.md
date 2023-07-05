@@ -8,6 +8,7 @@
 | 3 | 2-add_nodeint.c | Write a function that adds a new node at the beginning of a listint_t list.|
 | 4 | 3-add_nodeint_end.c | Write a function that adds a new node at the end of a listint_t list.|
 | 5 | 4-free_listint.c | Write a function that frees a listint_t list.|
-| 6 |  | |
+| 6 | 5-free_listint2.c | Write a function that frees a listint_t list.|
 | 7 |  | |
 | 8 |  | |
+| 9 |  | |
