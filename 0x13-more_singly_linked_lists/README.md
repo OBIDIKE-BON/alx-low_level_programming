@@ -12,3 +12,9 @@
 | 7 | 6-pop_listint.c | Write a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).|
 | 8 | 7-get_nodeint.c | Write a function that returns the nth node of a listint_t linked list.|
 | 9 |  | |
+| 10 |  | |
+| 11 |  | |
+| 12 |  | |
+| 13 |  | |
+| 14 |  | |
+| 15 |  | |
