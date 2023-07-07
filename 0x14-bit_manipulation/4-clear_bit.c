@@ -4,7 +4,7 @@
 /**
  * clear_bit - sets the value of a bit to 0 at a given index
  * @n: parameter
- * @index: index
+ * @index: index of bit to be manipulated
  * Return: 1 if works, -1 if error
  */
 
