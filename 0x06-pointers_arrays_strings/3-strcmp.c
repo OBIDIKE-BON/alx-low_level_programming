@@ -2,8 +2,8 @@
 
 /**
  * _strcmp -  function that compares two strings.
- * @s1: primera cadena.
- * @s2: segunda cadena.
+ * @s1: first string.
+ * @s2: second string.
  * Return: 0.
  */
 
